@@ -12,8 +12,8 @@ import android.widget.Toast
 import com.i7play.supertian.beans.BaseBean
 import com.i7play.supertian.view.BindTextsWatcher
 import com.jkt.tdialog.TDialog
-import io.haobi.wallet.utils.NetworkUtil
-import io.haobi.wallet.utils.SharedPrefsUtils
+import com.i7play.supertian.utils.NetworkUtil
+import com.i7play.supertian.utils.SharedPrefsUtils
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import java.math.BigDecimal

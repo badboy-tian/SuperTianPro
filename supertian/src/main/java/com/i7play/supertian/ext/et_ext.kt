@@ -1,4 +1,4 @@
-package io.haobi.wallet.ext
+package com.i7play.supertian.ext
 
 import android.text.TextUtils
 import android.widget.EditText

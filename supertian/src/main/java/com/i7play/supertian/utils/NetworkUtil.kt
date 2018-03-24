@@ -1,4 +1,4 @@
-package io.haobi.wallet.utils
+package com.i7play.supertian.utils
 
 import android.content.Context
 import android.net.ConnectivityManager

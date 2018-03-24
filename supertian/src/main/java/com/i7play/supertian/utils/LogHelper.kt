@@ -1,6 +1,6 @@
-package io.haobi.wallet.utils
+package com.i7play.supertian.utils
 
-import io.haobi.wallet.BuildConfig
+import com.i7play.supertian.BuildConfig
 import com.orhanobut.logger.Logger
 
 /**
@@ -10,16 +10,15 @@ import com.orhanobut.logger.Logger
 
 object LogHelper {
     private val DEBUG = BuildConfig.DEBUG
-    private val TAG = "io.haobi.wallet"
 
     fun LogE(`object`: Any) {
-        if (DEBUG){
+        if (DEBUG) {
             Logger.e(`object`.toString())
         }
     }
 
     fun LogE(cls: Class<*>, `object`: Any) {
         if (DEBUG)
-            Logger.e(TAG + " " + cls.name + " : " + `object`.toString())
+            Logger.e(" " + cls.name + " : " + `object`.toString())
     }
 }
