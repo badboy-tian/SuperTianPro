@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="line_color">#ededed</color>
+    <color name="blue">#5f8cff</color>
+    <color name="blue_light">#7098ff</color>
+    <color name="default_bg">#f4f4f4</color>
+</resources>

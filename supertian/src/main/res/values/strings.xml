@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SuperTian</string>
+    <string name="save">Save</string>
+    <string name="loading">loading</string>
+</resources>
