@@ -4,4 +4,6 @@
     <color name="blue">#5f8cff</color>
     <color name="blue_light">#7098ff</color>
     <color name="default_bg">#f4f4f4</color>
+    <color name="btn_normal">#225DA9</color>
+    <color name="gray999">#999999</color>
 </resources>

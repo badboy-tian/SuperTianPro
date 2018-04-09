@@ -2,4 +2,11 @@
     <string name="app_name">SuperTian</string>
     <string name="save">Save</string>
     <string name="loading">loading</string>
+    <string name="nomore_loading">没有了</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="state_no_network">您的网络已断开</string>
+    <string name="state_network_refresh">请检查网络后点击刷新页面</string>
+    <string name="btn_refresh">刷新</string>
+    <string name="state_no_data">暂无内容</string>
 </resources>

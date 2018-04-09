@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="95px"
+            android:layout_height="95px"
+            android:src="@drawable/tip_icon" />
+
+        <TextView
+            android:id="@+id/item_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:text="@string/state_no_network"
+            android:textColor="@color/btn_normal"
+            android:textSize="16px" />
+
+        <TextView
+            android:id="@+id/item_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:text="@string/state_network_refresh"
+            android:textColor="@color/gray999"
+            android:textSize="12px" />
+
+        <Button
+            android:id="@+id/refreshBtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="120px"
+            android:layout_height="40px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/button_normal_selector"
+            android:text="@string/btn_refresh"
+            android:textColor="@color/white"
+            android:textSize="15px" />
+    </LinearLayout>
+</RelativeLayout>
