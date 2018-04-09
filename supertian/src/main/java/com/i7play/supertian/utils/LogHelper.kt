@@ -1,6 +1,5 @@
 package com.i7play.supertian.utils
 
-import com.i7play.supertian.BuildConfig
 import com.orhanobut.logger.Logger
 
 /**
@@ -9,16 +8,11 @@ import com.orhanobut.logger.Logger
  */
 
 object LogHelper {
-    private val DEBUG = BuildConfig.DEBUG
-
     fun LogE(`object`: Any) {
-        if (DEBUG) {
-            Logger.e(`object`.toString())
-        }
+        Logger.e(`object`.toString())
     }
 
     fun LogE(cls: Class<*>, `object`: Any) {
-        if (DEBUG)
-            Logger.e(" " + cls.name + " : " + `object`.toString())
+        Logger.e(" " + cls.name + " : " + `object`.toString())
     }
 }
