@@ -31,7 +31,7 @@ class AutoToolbar @JvmOverloads constructor(context: Context, attrs: AttributeSe
         mTextSize = loadTextSizeFromTextAppearance(titleTextAppearance)
         mSubTextSize = loadTextSizeFromTextAppearance(subtitleTextAppearance)
 
-        val menuA = context.getTheme().obtainStyledAttributes(attrs, R.styleable.Theme,
+        val menuA = context.theme.obtainStyledAttributes(attrs, R.styleable.Theme,
                 defStyleAttr, R.style.ThemeOverlay_AppCompat)
         val menuTextAppearance = menuA.getResourceId(R.styleable.Theme_actionBarTheme,
                 R.style.ThemeOverlay_AppCompat_ActionBar)

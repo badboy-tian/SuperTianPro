@@ -33,9 +33,9 @@ open class AutoLayoutWidgetActivity : AutoLayoutActivity() {
             view = AutoCardView(context, attrs)
         }
 
-        if (name == Toolbar){
+        /*if (name == Toolbar){
             view = AutoToolbar(context, attrs)
-        }
+        }*/
 
         if (name == ACTION_MENU_ITEM_VIEW){
             view = ActionMenuItemView(context, attrs)
