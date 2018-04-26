@@ -6,4 +6,5 @@
     <color name="default_bg">#f4f4f4</color>
     <color name="btn_normal">#225DA9</color>
     <color name="gray999">#999999</color>
+    <color name="dynamic_action_bar_color">#484646</color>
 </resources>

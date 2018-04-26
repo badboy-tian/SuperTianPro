@@ -25,6 +25,13 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -46,7 +53,7 @@ dependencies {
     implementation 'com.zhy:base-rvadapter:3.0.3'
     implementation 'com.github.tianqiujie:LRecyclerView:1.0.3@aar'
     implementation 'com.github.tianqiujie:MultiStateView:1.0.1'
-    implementation 'com.zhy:autolayout:1.4.5'
+    compile 'com.zhy:autolayout:1.4.5'
     implementation 'com.github.tianqiujie:MNZXingCode:V1.0.9'
 
     implementation 'com.orhanobut:logger:2.1.1'
