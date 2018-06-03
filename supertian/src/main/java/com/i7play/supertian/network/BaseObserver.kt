@@ -53,6 +53,7 @@ abstract class BaseObserver<T>() : Observer<T>, Serializable {
 
     fun show(msg: String) {
         progressDialog?.let {
+            it.setMessage(msg)
             it.show()
         }
     }
@@ -89,67 +90,8 @@ abstract class BaseObserver<T>() : Observer<T>, Serializable {
             }
         }
 
-        /*if (e is SocketTimeoutException) {
-            activity?.let {
-                it.toast(e.toString())
-            }
-        }else if (e is UnknownHostException){
-            activity?.let {
-                it.toast(e.toString())
-            }
-        }else{
-            activity?.let {
-                it.toast(e.toString())
-            }
-        }*/
         activity?.toast(e.message.toString())
-        /*activity?.let {
-            it.toast(it.getString(R.string.connect_timeout))
-        }
-        //activity?.toast(activity.getString(R.string.connect_timeout))
-    } else if (e is ConnectException) {
-        activity?.let {
-            it.toast(it.getString(R.string.connect_interept))
-        }
-        //activity?.toast(activity.getString(R.string.connect_interept))
-    } else if (e is ApiException) {
-        e.message?.let {
-            if (it.contains("未登录") || it.contains("not log in")) {
-                jumpToLogin()
-                return
-            }
-        }
-        activity?.let {
-            it.toast(it.getString(R.string.error) + e.message)
-        }
-        //activity?.toast(activity.getString(R.string.error) + e.message)
-    } else if (e is UnknownHostException) {
-        activity?.let {
-            it.toast(it.getString(R.string.unknow_text))
-        }
-        //activity?.toast(activity.getString(R.string.unknow_text))
-    } else {
-        activity?.let {
-            it.toast(it.getString(R.string.error) + e.message)
-        }
-        //activity?.toast(activity.getString(R.string.error) + e.message)
-    }*/
     }
-
-    /*fun jumpToLogin() {
-        if (ActivityManager.isActivityExist(LoginActivity::class.java)) {
-            return
-        }
-        User.getUser()?.clear()
-        val i = Intent(activity, LoginActivity::class.java)
-        i.putExtra(AppConstants.FromCodeKey, activity?.javaClass?.simpleName)
-        i.putExtra(AppConstants.FromReqNumKey, currentReqNum)
-        activity?.startActivity(i)
-        activity?.let {
-            it.toast(it.getString(R.string.token_timeout))
-        }
-        //activity?.toast(activity.getString(R.string.token_timeout))
-    }*/
 
     abstract fun _onNext(t: T)
     override fun onComplete() {}
