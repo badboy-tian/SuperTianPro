@@ -1,4 +1,4 @@
-package io.haobi.wallet.network
+package com.i7play.supertian.network
 
 class HttpResult<T> {
     var errno = 0

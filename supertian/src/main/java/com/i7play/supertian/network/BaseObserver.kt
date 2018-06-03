@@ -4,7 +4,6 @@ import android.app.Activity
 import android.app.ProgressDialog
 import com.i7play.supertian.R
 import com.i7play.supertian.ext.toast
-import io.haobi.wallet.network.HttpResult
 import com.i7play.supertian.utils.LogHelper
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
