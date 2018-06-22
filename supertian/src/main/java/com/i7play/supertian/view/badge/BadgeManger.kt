@@ -115,16 +115,20 @@ class BadgeManger @JvmOverloads constructor(context: Context, attrs: AttributeSe
         if (style == STYLE_GONE) {
             visibility = View.GONE
         }
+
+
         super.setText(text, type)
     }
 
 
     fun setBadgeCount(count: Int) {
-
         if (style == STYLE_SMALL && count != 0) {
             text = ""
         } else {
             text = count.toString()
+            if (count > maxNum){
+                text = "$maxNum+"
+            }
         }
     }
 
@@ -147,6 +151,7 @@ class BadgeManger @JvmOverloads constructor(context: Context, attrs: AttributeSe
         setTargetView(tabView)
     }
 
+    var maxNum = 99
 
     fun setTargetView(target: View?) {
         if (parent != null) {

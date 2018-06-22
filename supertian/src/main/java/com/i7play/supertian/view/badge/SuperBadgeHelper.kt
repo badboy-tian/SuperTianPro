@@ -115,7 +115,7 @@ private constructor(context: Activity?, view: View, tag: String?, num: Int, priv
             SuperBadgeDater.instance.addBadge(this)
             //传递变化到上级控件
             for (bean in paterBadge) {
-                bean?.paterAddNum(i)
+                bean.paterAddNum(i)
             }
         }
     }
@@ -235,6 +235,9 @@ private constructor(context: Activity?, view: View, tag: String?, num: Int, priv
         badge.isHideOnNull = mHideOnNull
     }
 
+    fun setMaxNum(maxNum: Int){
+        badge.maxNum = maxNum
+    }
 
     interface OnNumCallback {
         fun lodingNum(): Int //加载数字方法
