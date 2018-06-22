@@ -8,11 +8,13 @@ class SuperBadgeDater private constructor() : Serializable {
     internal var map: MutableMap<String, SuperBadgeHelper> = HashMap()
 
     fun addBadge(superBadge: SuperBadgeHelper) {
-        map[superBadge.tag!!] = superBadge
+        superBadge.tag?.let {
+            map[it] = superBadge
+        }
     }
 
-    fun getBadge(tag: String): SuperBadgeHelper {
-        return map[tag]!!
+    fun getBadge(tag: String): SuperBadgeHelper? {
+        return map[tag]
     }
 
     companion object {

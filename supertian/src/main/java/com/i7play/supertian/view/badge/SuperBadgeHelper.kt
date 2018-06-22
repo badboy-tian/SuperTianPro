@@ -82,9 +82,8 @@ private constructor(context: Activity?, view: View, tag: String?, num: Int, priv
     }
 
 
-    fun setBackground(dipRadius: Int, badgeColor: Int) {
+    fun setBackground(badgeColor: Int, dipRadius: Int = 9) {
         badge.setBackground(dipRadius, badgeColor)
-
     }
 
     /**
@@ -274,12 +273,12 @@ private constructor(context: Activity?, view: View, tag: String?, num: Int, priv
         fun init(context: Activity, view: View, tag: String, num: Int = 0, style: Int = STYLE_DEFAULT): SuperBadgeHelper {
             val superBadge = SuperBadgeDater.instance.getBadge(tag)
             if (superBadge != null) {
-                superBadge!!.view = view
-                superBadge!!.context = context
-                superBadge!!.setBadgeStyle(style)
-                superBadge!!.badge.setTargetView(view)
-                if (superBadge!!.getStyle()) {
-                    superBadge!!.badge.setBadgeCount(superBadge!!.num)
+                superBadge.view = view
+                superBadge.context = context
+                superBadge.setBadgeStyle(style)
+                superBadge.badge.setTargetView(view)
+                if (superBadge.getStyle()) {
+                    superBadge.badge.setBadgeCount(superBadge.num)
                 }
                 return superBadge
             } else {
