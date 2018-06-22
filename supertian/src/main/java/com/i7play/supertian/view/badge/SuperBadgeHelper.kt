@@ -120,6 +120,16 @@ private constructor(context: Activity?, view: View, tag: String?, num: Int, priv
         }
     }
 
+    fun refreshNum(num: Int){
+        this.num = num
+        badge.setBadgeCount(this.num)
+        SuperBadgeDater.instance.addBadge(this)
+        //传递变化到上级控件
+        for (bean in paterBadge) {
+            bean.refreshNum(num)
+        }
+    }
+
     /**
      * 读取所有消息，减去所有数字
      */
