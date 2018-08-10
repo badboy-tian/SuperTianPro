@@ -12,7 +12,7 @@ import com.zhy.autolayout.utils.AutoUtils
  * Created by Administrator on 2017/8/2.
  */
 
-abstract class AutoCommonGridAdapter<T>(context: Context, layoutId: Int, datas: List<T>) : CommonAdapter<T>(context, layoutId, datas) {
+abstract class AutoCommonGridAdapter<T>(context: Context, layoutId: Int, datas: ArrayList<T>) : CommonAdapter<T>(context, layoutId, datas) {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
